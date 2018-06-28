@@ -1,18 +1,20 @@
 :root {
-    --main-color: rgb(95, 5, 148);
-    --font-color: rgb(221, 221, 221);
+  --main-color: rgb(95, 5, 148);
+  --font-color: rgb(221, 221, 221);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--font-color);
-    color: var(--font-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--font-color);
+  color: var(--font-color);
 }
 
 /**
@@ -20,112 +22,113 @@ body {
  */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    display: flex;
-    /* min-width: 100vw; */
-    flex-basis: 0;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  /* min-width: 100vw; */
+  flex-basis: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav_wrapper {
-    flex-basis: 30%;
-    flex-shrink: 1;
-    position: relative;
-    min-width: 400px;
-    background: var(--font-color);
+  flex-basis: 30%;
+  flex-shrink: 1;
+  position: relative;
+  min-width: 400px;
+  background: var(--font-color);
 }
 
 .nav-bar {
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    min-height: 100vh;
-    /* flex-basis: 0; */
-    color: var(--main-color);
-    text-align: center;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  /* flex-basis: 0; */
+  color: var(--main-color);
+  text-align: center;
 }
 
 .nav-bar .title {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    background: var(--main-color);
-    color: var(--font-color);
-    padding: 2rem 1rem;
-    font-weight: 900;
-    font-size: 1.5rem;
+  background: var(--main-color);
+  color: var(--font-color);
+  padding: 2rem 1rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .nav {
-    margin-top: 2rem;
-    list-style-type: none;
+  margin-top: 2rem;
+  list-style-type: none;
 }
 
 .nav-link {
-    background: var(--font-color);
-    /* background: #000; */
-    color: var(--main-color);
-    display: block;
-    padding: 2rem 1rem;
-    margin-top: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
+  background: var(--font-color);
+  /* background: #000; */
+  color: var(--main-color);
+  display: block;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .nav li:not(:last-of-type) {
-    border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .main {
-    margin: 0 auto;
-    flex-basis: 70%;
-    background: var(--font-color);
-    color: #333;
+  margin: 0 auto;
+  flex-basis: 70%;
+  background: var(--font-color);
+  color: #333;
 }
 
 .main-section {
-    min-height: 80vh;
-    height: auto;
+  min-height: 80vh;
+  height: auto;
 }
 
 .main-section p,
 .main-section ul {
-    padding: 1rem 2rem;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--main-color);
-    line-height: 150%;
-    text-align: justify;
-    text-justify: inter-word;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--main-color);
+  line-height: 150%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .main-section ul {
-    padding: 1rem 4rem;
+  padding: 1rem 4rem;
 }
 
 code {
-    display: block;
-    padding: 2rem;
-    color: var(--font-color);
-    background: var(--main-color);
-    font-weight: 900;
+  display: block;
+  padding: 2rem;
+  color: var(--font-color);
+  background: var(--main-color);
+  font-weight: 900;
 }
 
-@media(max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    .nav_wrapper {
-        min-height: 200px;
-        height: 250px;
-        overflow-x: scroll;
-    }
-    .nav-bar {
-        position: static;
-    }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .nav_wrapper {
+    min-height: 200px;
+    height: 250px;
+    overflow-x: scroll;
+  }
+  .nav-bar {
+    position: static;
+  }
 }
