@@ -12,8 +12,151 @@
 <body>
     <!-- main container -->
     <div class="container">
-
+        <!-- nav-bar  -->
+        <div class="nav_wrapper">
+            <nav id="navbar" class="nav-bar">
+                <header class="title">
+                    JS Documentation
+                </header>
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#need_to_know">need to know</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#javascript_java">javascript java </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#hello_world">hello world</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#variable">variable</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- main container  -->
+        <main class="main" id="main-doc">
+            <section class="main-section" id="introduction">
+                <header class="title">introduction</header>
+                <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML
+                    document, can provide dynamic interactivity on websites. It was invented by Brendan Eich, co-founder
+                    of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation.</p>
+                <p>
+                    JavaScript is incredibly versatile. You can start small, with carousels, image galleries, fluctuating layouts, and responses
+                    to button clicks. With more experience, you'll be able to create games, animated 2D and 3D graphics,
+                    comprehensive database-driven apps, and much more!
+                </p>
+                <p>
+                    JavaScript itself is fairly compact yet very flexible. Developers have written a large variety of tools on top of the core
+                    JavaScript language, unlocking a vast amount of extra functionality with minimum effort. These include:
+                </p>
+                <ul>
+                    <li>
+                        Browser Application Programming Interfaces (APIs) — APIs built into web browsers, providing functionality like dynamically
+                        creating HTML and setting CSS styles, collecting and manipulating a video stream from the user's
+                        webcam, or generating 3D graphics and audio samples.
+                    </li>
+                    <li>
+                        Third-party APIs to allow developers to incorporate functionality in their sites from other content providers, such as Twitter
+                        or Facebook.
+                    </li>
+                    <li>
+                        Third-party frameworks and libraries you can apply to your HTML to allow you to rapidly build up sites and applications.
+                    </li>
+                </ul>
+                <p>
+                    Because this article is only supposed to be a light introduction to JavaScript, we are not going to confuse you at this stage
+                    by talking in detail about what the difference is between the core JavaScript language and the different
+                    tools listed above. You can learn all that in detail later on, in our JavaScript learning area, and in
+                    the rest of MDN.
+                </p>
+            </section>
+            <section class="main-section" id="need_to_know">
+                <header class="title">need to know</header>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="javascript_java">
+                <header class="title">javascript java</header>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles
+                    Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression
+                    syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed
+                    from LiveScript to JavaScript.
+                </p>
+                <p>
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on
+                    a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based
+                    object model instead of the more common class-based object model. The prototype-based model provides
+                    dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports
+                    functions without any special declarative requirements. Functions can be properties of objects, executing
+                    as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods.
+                    You do not have to be concerned with whether methods are public, private, or protected, and you do not
+                    have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                </p>
+            </section>
+            <section class="main-section" id="hello_world">
+                <header class="title">hello world</header>
+                <p>
+                    he above section might sound really exciting, and so it should — JavaScript is one of the most lively web technologies, and
+                    as you start to get good at using it, your websites will enter a new dimension of power and creativity.
+                </p>
+                <p>
+                    However, becoming comfortable with JavaScript is a little harder than becoming comfortable with HTML and CSS. You may have
+                    to start small and keep working in small consistent steps. To start, we'll show how to add some basic
+                    JavaScript to your page, creating a "hello world!" example
+                </p>
+                <p>
+                    To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                </p>
+                <code>
+                    function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");
+                </code>
+                <code>
+                    var myHeading = document.querySelector('h1'); myHeading.textContent = 'Hello world!';
+                </code>
+                <code>
+                    /* Everything in between is a comment. */
+                </code>
+                <code>
+                    // This is a comment
+                </code>
+            </section>
+            <section class="main-section" id="variable">
+                <header class="title">variable</header>
+                <p>
+                    Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by
+                    any name you want to call it:
+                </p>
+                <code>
+                    var MyVariable;
+                </code>
+                <p>
+                    After declaring a variable, you can give it a value:
+                </p>
+                <code>
+                    myVariable = 'Bob';
+                </code>
+            </section>
+        </main>
     </div>
+    <!-- mocha js file  -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- main js file  -->
     <script src="main.js"></script>
 </body>
