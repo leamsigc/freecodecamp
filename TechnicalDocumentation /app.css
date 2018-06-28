@@ -1,0 +1,13 @@
+:root {
+    --main-color: rgb(95, 5, 148);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+}
